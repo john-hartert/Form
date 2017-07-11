@@ -6,79 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet/main.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <title>Survey Form</title>
 </head>
 <body>
     <form action="http://localhost:5000"> 
+    
+    <div class="container">
+    
+        <div class="row">
+            <div class="first">
+                <br>
+                <br>
+                <label>Name:</label> 
+                <input type="text" name="Name" value=""> 
+                <br>
+                <br>
+            
+                <label>Age:</label>
+                <input type="number" name="Age" value="">
+                <br>
+                <br>
+            
+                <label>Superpower:</label>
+                <input type="text" name="Superpower" value"">
+                <br>
+                <br>
+            
+                <label>Cape Size:</label>
+                <select name="Cape Size"> 
+                <option>Small</option> 
+                <option>Medium</option> 
+                <option>Large</option> 
+                </select>
+                <br>
+                <br>
 
-        <label>Name:</label> 
-        <input type="text" name="Name" value=""> 
-        <br>
-        <br>
+                <label>Operating System:</label>
+                <label class="radio-inline">
+                <input type="radio" name="Operating System" id="inlineRadio1" value="Linux"> Linux
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="Operating System" id="inlineRadio2" value="Mac"> macOS
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="Operating System" id="inlineRadio3" value="Windows"> Windows
+                </label>
+                <br>
+                <br>
+            </div>
+        </div>
         
-        <label>Age:</label>
-        <input type="number" name="Age" value="">
-        <br>
-        <br>
-        
-        <label>Superpower:</label>
-        <input type="text" name="Superpower" value"">
-        <br>
-        <br>
-        
-        <label>Cape Size:</label>
-        <select name="Cape Size"> 
-        <option>Small</option> 
-        <option>Medium</option> 
-        <option>Large</option> 
-        </select>
-        <br>
-        <br>
+        <div class="row">
+            <div class="second">
+                <label>Bio:</label>
+                <textarea name="Bio" id="user-message" class="form-control" rows="3"></textarea>
+                <br>
+                <br>
+            
 
-        <label>Operating System:</label>
-        <label class="radio-inline">
-        <input type="radio" name="Operating System" id="inlineRadio1" value="Linux"> Linux
-        </label>
-        <label class="radio-inline">
-        <input type="radio" name="Operating System" id="inlineRadio2" value="Mac"> macOS
-        </label>
-        <label class="radio-inline">
-        <input type="radio" name="Operating System" id="inlineRadio3" value="Windows"> Windows
-        </label>
-        <br>
-        <br>
-        
-        <label>Bio:</label>
-        <textarea name="Bio" id="user-message" class="form-control" rows="3"></textarea>
-        <br>
-        <br>
+                <label>Tagline:</label>
+                <textarea name="Tagline" id="user-message" class="form-control" rows="1"></textarea>
+                <br>
+                <br>
 
-        <label>Tagline:</label>
-        <textarea name="Tagline" id="user-message" class="form-control" rows="1"></textarea>
-        <br>
-        <br>
+                <label>Archenemies List:</label>
+                <textarea name="Archenemies List" id="user-message" class="form-control" rows="3"></textarea>
+                <br>
+                <br>
+            </div>  
+        </div>
 
-        <label>Archenemies List:</label>
-        <textarea name="Archenemies List" id="user-message" class="form-control" rows="3"></textarea>
-        <br>
-        <br>
+        <div class="row">
+            <div class="third">
+                <label>Mascot:</label> 
+                <input type="text" name="Mascot" value=""> 
+                <br>
+                <br>
 
-        <label>Mascot:</label> 
-        <input type="text" name="Mascot" value=""> 
-        <br>
-        <br>
-
-        <label>Programming Languages:</label> 
-        <input type="text" name="Languages" value=""> 
-        <br>
-        <br>
+                <label>Programming Languages:</label> 
+                <input type="text" name="Languages" value=""> 
+                <br>
+                <br>
+            </div>
+        </div>
 
         
-
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <div class="row">
+            <div class="fourth">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <br>
+                <br>
+            </div>
+        </div>
         
 
         
